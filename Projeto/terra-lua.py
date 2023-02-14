@@ -67,7 +67,7 @@ while t0 < tf:
 
 
 plt.title("Trajetória em termos das componentes")
-plt.xlabel("Tempo (s)")
+plt.xlabel("Tempo (dias)")
 plt.ylabel("Distância ao sol (m)")
 trajetoria = np.array(trajetoria)    
 trajetoria[:,0] /= 3600*24
@@ -79,11 +79,11 @@ plt.legend()
 plt.show()
 
 plt.title("Trajetória em termos do módulo de $r$ ")
-plt.xlabel("Tempo (s)")
+plt.xlabel("Tempo (dias)")
 plt.ylabel("Distância ao sol (m)")
 plt.plot(trajetoria[:,0],(trajetoria[:,5]**2+trajetoria[:,6]**2)**0.5, label= "r lua")
 plt.plot(trajetoria[:,0],(trajetoria[:,1]**2+trajetoria[:,2]**2)**0.5,label= "r terra")
-plt.legend(fontsize = 8.5, loc='upper left')
+plt.legend(fontsize = 8.25, loc='upper left')
 plt.show()
 
 plt.title("Trajetória dos corpos")
